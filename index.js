@@ -7,7 +7,7 @@ const { exec } = require('child_process')
 const _ = require('underscore')
 const path = require('path')
 
-function impliments(dependencies: Array, options = {}, cb) {
+function impliments (dependencies: Array, options = {}, cb) {
 	return new Promise((resolve, reject) => {
 		if (
 			!(dependencies && options) ||
