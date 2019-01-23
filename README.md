@@ -4,7 +4,7 @@ Impliment a Npm module into your code easier.
 `` npm install impliments``
 ## Options
 Impliment needs two specific options
-```
+```js
 imppliments(xo, {
 	npm: (true or false),
 	testFile: 'path' // optional
@@ -12,7 +12,7 @@ imppliments(xo, {
 ```
 ## Usage
 -----------
-```
+```js
 const impliments = require('impliments')
 
 var some_deps = ['underscore', 'cheerio', 'bluebird']
