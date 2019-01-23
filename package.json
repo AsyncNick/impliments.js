@@ -1,0 +1,22 @@
+{
+  "name": "impliments",
+  "version": "1.0.0",
+  "description": "package currier",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "underscore": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsyncNick/impliments.js.git"
+  },
+  "author": "nicky laczko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsyncNick/impliments.js/issues"
+  },
+  "homepage": "https://github.com/AsyncNick/impliments.js#readme"
+}
