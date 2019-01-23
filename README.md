@@ -5,7 +5,7 @@ Impliment a Npm module into your code easier.
 ## Options
 Impliment needs two specific options
 ```js
-imppliments(xo, {
+impliments(xo, {
 	npm: (true or false),
 	testFile: 'path' // optional
 })
