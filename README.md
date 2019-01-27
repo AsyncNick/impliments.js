@@ -1,5 +1,6 @@
 # impliments.js
 Impliment a Npm module into your code easier.
+[npm package](https://www.npmjs.com/package/impliments)
 ## Install
 `` npm install impliments``
 ## Options
