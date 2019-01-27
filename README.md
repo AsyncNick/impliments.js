@@ -5,9 +5,13 @@ Impliment a Npm module into your code easier.
 ## Options
 Impliment needs two specific options
 ```js
-impliments(xo, {
+impliments([], {
 	npm: (true or false),
-	testFile: 'path' // optional
+	testFile: 'path', // optional
+	remove: (true or false), // this removes the entire node_modules folder
+	// -- remove OR remove_deps can be enabled but not at the same time
+	remove_deps: (true or false) // this removes specific dependencies
+	eval: // execute a command while in a Promise
 })
 ```
 ## Usage
