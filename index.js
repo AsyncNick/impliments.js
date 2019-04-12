@@ -12,6 +12,10 @@ module.exports = function impliments (dependencies, options, cb) {
 	new Promise((resolve, reject) => {
 		if (typeof dependencies === 'String') {
 			exec(`npm install ${dependencies}`)
+		} else if (Array(dependencies)) {
+			dependencies.map(d => {
+				exec(`npm install ${d}`)
+			})
 		}
 		if (options.npm || options.Npm) {
 		dependencies.map((d) => exec(`npm install ${d}`))
