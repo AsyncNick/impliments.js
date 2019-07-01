@@ -8,8 +8,8 @@ const _ = require('underscore')
 const path = require('path')
 const remove = require('remove')
 
-module.exports = function impliments (dependencies, options, cb) {
-	new Promise((resolve, reject) => {
+module.exports = async function impliments (dependencies, options, cb) => {
+	await ((resolve, reject) {
 		if (typeof dependencies === 'String') {
 			exec(`npm install ${dependencies}`)
 		} else if (Array(dependencies)) {
@@ -27,7 +27,7 @@ module.exports = function impliments (dependencies, options, cb) {
 			resolve
 		}
 	})
-	new Promise((r,r1) => {
+	await ((r,r1) => {
 		if (options.remove_dependencies === true) {
 			let removed = dependencies.map((dep) => {
 				remove(`./node_modules/${dep}`, (e) => {
@@ -46,4 +46,6 @@ module.exports = function impliments (dependencies, options, cb) {
 			exec(`${eval}`)
 		}
 	})
+
+  return
 }
